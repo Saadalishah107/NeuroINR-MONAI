@@ -1,0 +1,132 @@
+{
+  "device": "cuda",
+  "modality_mode": "multimodal",
+  "in_channels": 4,
+  "cnn_validation_calibrated": {
+    "auroc": 0.952561669829222,
+    "auprc": 0.9781082828002646,
+    "f1": 0.9230769230769231,
+    "precision": 0.8823529411764706,
+    "recall_sensitivity": 0.967741935483871,
+    "specificity": 0.7647058823529411,
+    "threshold": 0.14733068645000458,
+    "n_positive": 31,
+    "n_total": 48
+  },
+  "cnn_test": {
+    "auroc": 0.783068783068783,
+    "auprc": 0.8453975144725241,
+    "f1": 0.7575757575757576,
+    "precision": 0.6410256410256411,
+    "recall_sensitivity": 0.9259259259259259,
+    "specificity": 0.3333333333333333,
+    "threshold": 0.14733068645000458,
+    "n_positive": 27,
+    "n_total": 48,
+    "n_train": 224
+  },
+  "vit_test": {
+    "auroc": 0.746031746031746,
+    "auprc": 0.7697563448671764,
+    "f1": 0.7796610169491526,
+    "precision": 0.71875,
+    "recall_sensitivity": 0.8518518518518519,
+    "specificity": 0.5714285714285714,
+    "threshold": 0.5773131847381592,
+    "n_positive": 27,
+    "n_total": 48
+  },
+  "siren_resolution_experiment": {
+    "1x_128px": {
+      "psnr": 25.463904036481573,
+      "ssim": 0.21058371075429272
+    },
+    "2x_256px": {
+      "psnr": 25.568541902176676,
+      "ssim": 0.17724443718391658
+    },
+    "4x_512px": {
+      "psnr": 25.4836483685439,
+      "ssim": 0.16289698828328023
+    }
+  },
+  "coordinate_shapley_example": {
+    "phi_x": -0.011931465938687325,
+    "phi_y": 0.007997361943125725,
+    "efficiency_check": 0.0
+  },
+  "traveling_vs_fedavg": {
+    "travel_final_auprc": [
+      0.8099166726093967,
+      0.8749909006655028,
+      0.8247189534078931,
+      0.8445672715288018,
+      0.8483068474465869
+    ],
+    "fedavg_final_auprc": [
+      0.7089774820412406,
+      0.743449844875937,
+      0.7874758364459336,
+      0.7248361567397508,
+      0.7218696353234452
+    ],
+    "paired_ttest": {
+      "statistic": 5.971012350170986,
+      "p_value": 0.003952041061364997,
+      "mean_difference": 0.10317833804637486,
+      "ci_95": [
+        0.055201717863517935,
+        0.15115495822923178
+      ],
+      "n_pairs": 5
+    }
+  },
+  "pca_explained_variance_ratio": [
+    0.8551772832870483,
+    0.09378670901060104,
+    0.024374186992645264,
+    0.006483372300863266
+  ],
+  "quantum_vs_classical": {
+    "classical": {
+      "auroc": 0.900735294117647,
+      "auprc": 0.9337584010177253,
+      "f1": 0.8514851485148515,
+      "precision": 0.8113207547169812,
+      "recall_sensitivity": 0.8958333333333334,
+      "specificity": 0.7058823529411765,
+      "threshold": 0.5,
+      "n_positive": 48,
+      "n_total": 82
+    },
+    "quantum_embedded": {
+      "auroc": 0.617953431372549,
+      "auprc": 0.6622983597968903,
+      "f1": 0.7384615384615385,
+      "precision": 0.5853658536585366,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.0,
+      "threshold": 0.5,
+      "n_positive": 48,
+      "n_total": 82
+    }
+  },
+  "settings": {
+    "quick": false,
+    "synthetic_fallback": false,
+    "real_quick": false,
+    "modality_mode": "multimodal",
+    "img_size": 128,
+    "limit_patients": 40,
+    "slices_per_patient": 8,
+    "cnn_epochs": 20,
+    "inr_steps": 500,
+    "fed_rounds": 6,
+    "fed_local_steps": 30,
+    "fed_repeats": 5,
+    "n_sites": 4,
+    "run_vit": true,
+    "vit_epochs": 5,
+    "out_dir": "./outputs"
+  }
+}

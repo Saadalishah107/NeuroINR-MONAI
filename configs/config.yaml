@@ -1,0 +1,10 @@
+img_size: 128
+limit_patients: 40
+slices_per_patient: 8
+cnn_epochs: 20
+inr_steps: 500
+fed_rounds: 6
+fed_local_steps: 30
+fed_repeats: 5
+n_sites: 4
+modality_mode: flair
