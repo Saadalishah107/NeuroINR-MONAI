@@ -4,7 +4,7 @@
 
 NeuroINR-MONAI is a research-oriented medical imaging project that integrates multimodal brain MRI classification, implicit neural representations, explainability, statistical analysis, distributed-learning simulation, MATLAB interoperability, and an exploratory classically simulated quantum feature map in one reproducible PyTorch workflow.
 
-The project was developed as an experimental computational biomedical imaging pipeline. It is intended for research and portfolio use and is **not a clinical diagnostic system**.
+The project was developed as an experimental computational biomedical imaging pipeline. It is intended for research use and is **not a clinical diagnostic system**.
 
 ---
 
